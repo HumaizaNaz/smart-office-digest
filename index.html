@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Executive Office Digest</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --card-header: #334155;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --success: #34d399;
+    --danger: #f87171;
+    --warning: #fbbf24;
+    --purple: #c084fc;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  }
+  .header h1 { margin: 0 0 8px 0; font-size: 26px; color: #fff; display: flex; align-items: center; gap: 10px; }
+  .header p { margin: 0; color: var(--muted); font-size: 14px; }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .metric-card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  .metric-card:hover {
+    transform: translateY(-2px);
+  }
+  .metric-val { font-size: 30px; font-weight: 700; margin-bottom: 4px; }
+  .metric-label { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .section-card {
+    background: var(--card);
+    border-radius: 16px;
+    border: 1px solid #334155;
+    padding: 22px;
+    margin-bottom: 24px;
+  }
+  .section-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { padding: 10px 0; border-bottom: 1px solid #293548; display: flex; align-items: center; gap: 12px; font-size: 14.5px; }
+  li:last-child { border-bottom: none; }
+  
+  .badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .progress-badge { background: rgba(52, 211, 153, 0.15); color: var(--success); border: 1px solid rgba(52, 211, 153, 0.3); }
+  .blocker-badge { background: rgba(248, 113, 113, 0.15); color: var(--danger); border: 1px solid rgba(248, 113, 113, 0.3); }
+  .client-badge { background: rgba(56, 189, 248, 0.15); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.3); }
+  .ops-badge { background: rgba(192, 132, 252, 0.15); color: var(--purple); border: 1px solid rgba(192, 132, 252, 0.3); }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { padding: 12px 10px; text-align: left; border-bottom: 1px solid #334155; font-size: 14.5px; }
+  th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  code { background: #0f172a; padding: 3px 7px; border-radius: 4px; font-size: 12px; color: var(--accent); }
+  
+  .action-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🏢 Weekly Executive Office Digest</h1>
+    <p>Automated Summary Pipeline • Generated on <strong>2026-09-24</strong> • Source: <code>Office_Digest_Source/</code></p>
+  </div>
+
+  <div class="grid">
+    <div class="metric-card">
+      <div class="metric-val" style="color: var(--accent);">7</div>
+      <div class="metric-label">Processed Logs</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" style="color: var(--success);">4</div>
+      <div class="metric-label">Milestones Done</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" style="color: var(--danger);">3</div>
+      <div class="metric-label">Critical Risks</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val" style="color: var(--warning);">4</div>
+      <div class="metric-label">Action Items</div>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 style="color: var(--danger);">⚠️ Critical Blockers & Risks</h2>
+    <table>
+      <thead><tr><th>Date</th><th>Issue Description</th><th>Source File</th></tr></thead>
+      <tbody><tr><td><span class='badge blocker-badge'>18 Sept</span></td><td>Experiencing delays in payment gateway integration.</td><td><code>2025-09-18_Blocker.txt</code></td></tr><tr><td><span class='badge blocker-badge'>18 Sept</span></td><td>Third-party vendor API documentation was found incomplete.</td><td><code>2025-09-18_Blocker.txt</code></td></tr><tr><td><span class='badge blocker-badge'>18 Sept</span></td><td>Risk: Launch date may slip by 1 week.</td><td><code>2025-09-18_Blocker.txt</code></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="section-card">
+    <h2 style="color: var(--success);">🚀 Progress & Key Achievements</h2>
+    <ul><li><span class='badge progress-badge'>19 Sept</span> Fixed 3 major critical bugs in the mobile application.</li><li><span class='badge progress-badge'>19 Sept</span> QA team initiated full regression testing.</li><li><span class='badge progress-badge'>19 Sept</span> Expected: Stable release build ready by Friday.</li><li><span class='badge progress-badge'>22 Sept</span> Action Item: Deploy staging build on Monday morning.</li></ul>
+  </div>
+
+  <div class="section-card">
+    <h2 style="color: var(--accent);">💬 Client Feedback & Requirements</h2>
+    <ul><li><span class='badge client-badge'>16 Sept</span> Submitted the first draft of the website redesign to the client.</li><li><span class='badge client-badge'>16 Sept</span> Client approved the overall layout but requested color palette modifications.</li><li><span class='badge client-badge'>20 Sept</span> Dashboard loading speed is slow / high latency reported.</li><li><span class='badge client-badge'>20 Sept</span> Client requested additional filter options for the dashboard.</li><li><span class='badge client-badge'>20 Sept</span> Priority: Focus on dashboard performance optimizations first.</li><li><span class='badge client-badge'>22 Sept</span> Client approved the revised blue color palette for the website.</li></ul>
+  </div>
+
+  <div class="section-card">
+    <h2 style="color: var(--purple);">👥 Operations & Team Sync</h2>
+    <ul><li><span class='badge ops-badge'>17 Sept</span> Reviewed and discussed Q3 performance targets.</li><li><span class='badge ops-badge'>17 Sept</span> Sales team requested improvements in incoming lead quality.</li><li><span class='badge ops-badge'>17 Sept</span> Action Item: Coordinate with marketing to improve qualified lead generation.</li><li><span class='badge ops-badge'>21 Sept</span> Overall team morale remains healthy and stable.</li><li><span class='badge ops-badge'>21 Sept</span> Two team members have submitted leave requests for next week.</li><li><span class='badge ops-badge'>21 Sept</span> Pending action items carried over from last week still need clearance.</li></ul>
+  </div>
+
+  <div class="section-card">
+    <h2 style="color: var(--warning);">📋 Action Items & Next Priorities</h2>
+    <ul><li class='action-item'><input type='checkbox'> <span>Next Step: Deliver revised design by Sept 20.</span></li><li class='action-item'><input type='checkbox'> <span>Action Item: Coordinate with marketing to improve qualified lead generation.</span></li><li class='action-item'><input type='checkbox'> <span>Pending action items carried over from last week still need clearance.</span></li><li class='action-item'><input type='checkbox'> <span>Action Item: Deploy staging build on Monday morning.</span></li></ul>
+  </div>
+</div>
+</body>
+</html>
