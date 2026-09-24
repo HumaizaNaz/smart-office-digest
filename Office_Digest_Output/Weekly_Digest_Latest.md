@@ -12,10 +12,10 @@
 ---
 
 ## 🚀 2. Progress & Completed Milestones
+- **[22 Sept]** Action Item: Deploy staging build on Monday morning.
 - **[19 Sept]** Fixed 3 major critical bugs in the mobile application.
 - **[19 Sept]** QA team initiated full regression testing.
 - **[19 Sept]** Expected: Stable release build ready by Friday.
-- **[22 Sept]** Action Item: Deploy staging build on Monday morning.
 
 ---
 
@@ -29,12 +29,12 @@
 ---
 
 ## 💬 4. Client Feedback & Requirements
-- **[16 Sept]** Submitted the first draft of the website redesign to the client.
-- **[16 Sept]** Client approved the overall layout but requested color palette modifications.
+- **[22 Sept]** Client approved the revised blue color palette for the website.
 - **[20 Sept]** Dashboard loading speed is slow / high latency reported.
 - **[20 Sept]** Client requested additional filter options for the dashboard.
 - **[20 Sept]** Priority: Focus on dashboard performance optimizations first.
-- **[22 Sept]** Client approved the revised blue color palette for the website.
+- **[16 Sept]** Submitted the first draft of the website redesign to the client.
+- **[16 Sept]** Client approved the overall layout but requested color palette modifications.
 
 ---
 
@@ -49,9 +49,9 @@
 ---
 
 ## 📋 6. Action Items & Next Priorities
-- [ ] Next Step: Deliver revised design by Sept 20.
-- [ ] Action Item: Coordinate with marketing to improve qualified lead generation.
-- [ ] Pending action items carried over from last week still need clearance.
 - [ ] Action Item: Deploy staging build on Monday morning.
+- [ ] Pending action items carried over from last week still need clearance.
+- [ ] Action Item: Coordinate with marketing to improve qualified lead generation.
+- [ ] Next Step: Deliver revised design by Sept 20.
 
 ---
