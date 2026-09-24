@@ -1,0 +1,4 @@
+Date: 16 Sept
+- Website redesign ka first draft client ko bhej diya
+- Client ne overall layout pasand kiya, color palette change mang raha hai
+- Next step: Revised design 20 Sept tak bhejni hai

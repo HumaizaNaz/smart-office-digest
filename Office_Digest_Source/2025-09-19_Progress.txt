@@ -1,0 +1,4 @@
+Date: 19 Sept
+- Mobile app ke 3 major bugs fix ho gaye
+- Testing team ne regression testing shuru kar di
+- Expected: Friday tak stable build

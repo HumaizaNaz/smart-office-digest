@@ -1,0 +1,5 @@
+Date: 18 Sept
+Issue:
+- Payment gateway integration mein delay ho raha hai
+- Third-party API documentation incomplete mili
+- Risk: Launch date 1 week shift ho sakti hai

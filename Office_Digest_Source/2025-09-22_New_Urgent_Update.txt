@@ -1,0 +1,4 @@
+Date: 22 Sept
+- Payment gateway documentation received from vendor, integration unblocked
+- Client approved revised blue color palette for website
+- Action: Deploy staging build on Monday morning
